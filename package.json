@@ -19,10 +19,7 @@
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.3.0",
     "hubot-seen": "~0.2.3",
-    "hubot-business-cat": "~1.2.2",
-    "coffee-script": "~1.6",
-    "underscore": ">= 1.0",
-    "clark": "0.0.6"  
+    "hubot-business-cat": "~1.2.2"
   },
   "engines": {
     "node": "0.10.x"
