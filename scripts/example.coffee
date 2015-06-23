@@ -14,7 +14,7 @@ module.exports = (robot) ->
       res.send "Good Morning!"
 
   robot.hear /hi|hi!/i, (res) ->
-      res.send "Hi {msg.message.user.name}!"
+      res.send "Hi #{msg.message.user.name}!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
