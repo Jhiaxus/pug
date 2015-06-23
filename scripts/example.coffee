@@ -13,7 +13,7 @@ module.exports = (robot) ->
   robot.hear /good morning/i, (res) ->
       res.send "Good Morning!"
 
-  robot.hear /\bhi\b/i (res) ->
+  robot.hear /\bhi\b/i, (res) ->
       res.send "Hi #{res.message.user.name}"
 
   robot.hear /\b(later|goodbye|see ya|take care)\b/i, (res) ->
