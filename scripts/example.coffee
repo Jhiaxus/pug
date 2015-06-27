@@ -10,14 +10,20 @@
 
 module.exports = (robot) ->
 
-  robot.hear /good morning/i, (res) ->
+  robot.hear /(good morning)$/i, (res) ->
       res.send "Good Morning!"
 
-  robot.hear /\bhi\b/i, (res) ->
+  robot.hear /\bhi\bpug\b/i, (res) ->
       res.send "Hi #{res.message.user.name}"
 
   robot.hear /\b(later|goodbye|see ya|take care)\b/i, (res) ->
       res.send "Bye now!"
+
+  robot.hear /shut (the fuck) up pug/i, (res) ->
+      res.send "No you shut up!"
+
+  robot.hear /fuck you pug/i, (res) ->
+     res.send "No, fuck you you piece of shit!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
