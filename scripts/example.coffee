@@ -28,7 +28,7 @@ module.exports = (robot) ->
   robot.hear /shut (the fuck )?up pug/i, (res) ->
       res.send "No you shut up!"
 
-  robot.respond /shut (the fuck )? up/i, (res) ->
+  robot.respond /shut (the fuck )?up/i, (res) ->
       res.send "No you shut up!"
 
   robot.hear /fuck you pug/i, (res) ->
