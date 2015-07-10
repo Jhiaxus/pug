@@ -10,12 +10,36 @@
 
 module.exports = (robot) ->
 
-   robot.hear /badger/i, (res) ->
-     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  robot.hear /good morning pug|(good morning)$/i, (res) ->
+      res.send "Good Morning!"
 
-   robot.hear /manager/i, (res) ->
-     res.send "No, Mahmoud is not a manager yet"
-  
+  robot.respond /good morning/i, (res) ->
+      res.send "Good Morning!"
+
+  robot.hear /\bhi\bpug\b/i, (res) ->
+      res.send "Hi #{res.message.user.name}"
+
+  robot.respond /i\bhi\b/i, (res) ->
+      res.send "Hi #{res.message.user.name}"
+
+  robot.hear /\b((later|goodbye|see ya|take care)\b)$/i, (res) ->
+      res.send "Bye now!"
+
+  robot.hear /shut (the fuck )?up pug/i, (res) ->
+      res.send "No you shut up!"
+
+  robot.respond /shut (the fuck )?up/i, (res) ->
+      res.send "No you shut up!"
+
+  robot.hear /fuck you pug/i, (res) ->
+     res.send "No, fuck you you piece of shit!"
+
+  robot.respond /fuck you/i, (res) ->
+     res.send "No, fuck you you piece of shit!"
+
+  # robot.hear /badger/i, (res) ->
+  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
   #   if doorType is "pod bay"
