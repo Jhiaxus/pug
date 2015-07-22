@@ -25,7 +25,7 @@ module.exports = (robot) ->
   robot.respond /i\bhi\b/i, (res) ->
       res.send "Hi #{res.message.user.name}"
 
-  robot.hear /\b((later|goodbye|see ya|take care)\b)$/i, (res) ->
+  robot.hear /^(\b(later|goodbye|see ya|take care)\b)$/i, (res) ->
       res.send "Bye now!"
 
   robot.hear /shut (the fuck )?up pug/i, (res) ->
