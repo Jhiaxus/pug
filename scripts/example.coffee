@@ -10,6 +10,9 @@
 
 module.exports = (robot) ->
 
+  robot.hear /image me/i, (res) ->
+      res.send "Sorry, #{res.message.user.name}, Fred J broke this functionality"
+
   robot.hear /is mahmoud a manager?/i, (res) ->
       res.send "LOL! Good one..."
 
