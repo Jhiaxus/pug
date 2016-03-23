@@ -31,6 +31,7 @@ ball = [
   "Concentrate and ask again",
   "Don't count on it",
   "My reply is no",
+  "Perhaps, after Mahmoud becomes a manager",
   "My sources say no",
   "Outlook not so good",
   "Very doubtful",
