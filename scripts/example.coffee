@@ -13,6 +13,9 @@ module.exports = (robot) ->
   robot.hear /is mahmoud a manager?/i, (res) ->
       res.send "Yes!  Congratulations, Mahmoud.  8 years of hard work and constant bitching have finally paid off.  Fuck Joe."
 
+  robot.hear /is mahmoud having another baby?/i, (res) ->
+      res.send "Ya, some guys never learn :face_with_rolling_eyes:"
+
   robot.hear /good morning pug|(good morning)$/i, (res) ->
       res.send "Good Morning!"
 
