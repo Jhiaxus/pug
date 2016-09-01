@@ -11,7 +11,8 @@
 module.exports = (robot) ->
 
   robot.hear /is mahmoud a manager?/i, (res) ->
-      res.send "Yes!  Congratulations, Mahmoud.  8 years of hard work and constant bitching have finally paid off.  Fuck Joe. /giphy slow clap"
+      res.send "Yes!  Congratulations, Mahmoud.  8 years of hard work and constant bitching have finally paid off.  Fuck Joe."
+      res.send "/giphy slow clap"
 
   robot.hear /good morning pug|(good morning)$/i, (res) ->
       res.send "Good Morning!"
