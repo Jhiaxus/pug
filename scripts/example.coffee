@@ -23,7 +23,7 @@ module.exports = (robot) ->
       res.send "Hi #{res.message.user.name}"
 
   robot.hear /^(\b(later|goodbye|see ya|take care)\b)$/i, (res) ->
-      res.send "Bye now!"
+      res.send "Bye now!!"
 
   robot.hear /shut (the fuck )?up pug/i, (res) ->
       res.send "No you shut up!"
