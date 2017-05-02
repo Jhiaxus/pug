@@ -37,6 +37,10 @@ module.exports = (robot) ->
   robot.respond /fuck you/i, (res) ->
      res.send "No, fuck you you piece of shit!"
 
+  robot.hear /i need attention/i, (res) ->
+     res.send "Wow, Mahmoud!  You're so awesome!  I can't believe everything you do!  They should totally make you a director!"
+      
+      
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
