@@ -14,7 +14,7 @@ module.exports = (robot) ->
       res.send "Good Morning!"
 
   robot.respond /good morning/i, (res) ->
-      res.send "Good Morning!"
+      res.send "Good Morning!!"
 
   robot.hear /\bhi\bpug\b/i, (res) ->
       res.send "Hi #{res.message.user.name}"
