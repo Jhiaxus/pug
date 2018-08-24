@@ -13,6 +13,9 @@ module.exports = (robot) ->
   robot.hear /good morning pug|(good morning)$/i, (res) ->
       res.send "Good Morning!"
 
+  robot.hear /wake up pug/i, (res) ->
+     res.send "I'm awake, I'm awake!"
+
   robot.respond /good morning/i, (res) ->
       res.send "Good Morning!!"
 
