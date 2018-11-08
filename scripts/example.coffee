@@ -32,7 +32,7 @@ module.exports = (robot) ->
       res.send "No you shut up!"
 
   robot.respond /shut (the fuck )?up/i, (res) ->
-      res.send "No you shut up!"
+      res.send "No you shut up!  I'm going to piss on your leg, you bitch."
 
   robot.hear /fuck you pug/i, (res) ->
      res.send "No, fuck you you piece of shit!"
