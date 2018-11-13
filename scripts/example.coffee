@@ -41,7 +41,7 @@ module.exports = (robot) ->
      res.send "No, fuck you you piece of shit!"
 
   robot.hear /may the fourth be with you/i, (res) ->
-     res.send "And also with you"
+     res.send "And also with you!"
       
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
