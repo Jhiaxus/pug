@@ -23,7 +23,7 @@ module.exports = (robot) ->
      res.send "I aim to please my master!"
 
   robot.hear /\bhi\bpug\b/i, (res) ->
-      res.send "Hi #{res.message.user.name}"
+      res.send "Hi #{res.message.user.name}" 
 
   robot.respond /i\bhi\b/i, (res) ->
       res.send "Hi #{res.message.user.name}"
