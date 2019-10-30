@@ -46,6 +46,9 @@ module.exports = (robot) ->
   robot.hear /may the fourth be with you/i, (res) ->
      res.send "And also with you!"
       
+  robot.hear /are you alive pug/i, (res) ->
+      res.send "Sorry I keep dying, guys.  Fucking GitHub."
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
