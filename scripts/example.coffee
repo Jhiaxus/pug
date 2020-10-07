@@ -17,7 +17,7 @@ module.exports = (robot) ->
       res.send "Good Morning!!"
 
   robot.hear /wake up pug/i, (res) ->
-     res.send "I'm awake, I'm awake!"
+     res.send "I'm awake! I'm awake!"
 
   robot.hear /good boy/i, (res) ->
      res.send "I aim to please my master!"
